@@ -1,0 +1,23 @@
+/* NAVBAR */
+.navbar {
+    $navbar: &;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+
+    &__items-container {
+        margin-left: auto;
+
+        @at-root {
+            #{$navbar}__item {
+                margin-right: 40px;
+            }
+
+            #{$navbar}__item--login {
+                margin-right: 0px;
+                margin-left: 30px;
+            }
+        }
+    }
+}
