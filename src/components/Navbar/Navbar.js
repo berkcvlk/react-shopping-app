@@ -13,7 +13,7 @@ function Navbar(props) {
             return (
               <span
                 key={route.title}
-                className={route.class ? route.class : ""}
+                className={route.className ? route.className : ""}
               >
                 <Link to={route.path}>{route.title}</Link>
               </span>
