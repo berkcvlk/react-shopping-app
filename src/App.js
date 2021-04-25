@@ -2,19 +2,23 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
 
-import Navbar from './components/Navbar/Navbar';
-import ProductsContainer from './components/ProductsContainer/ProductsContainer';
+import { routes } from './config/Router';
+import Layout from './components/Layout/Layout';
 
 function App(props) {
     return (
-        <>
-        <Navbar />
-        <ProductsContainer />
-        </>
+            <Router>
+                <Switch>
+                    {routes.map((route) => (
+                        <Route exact={route.exact} path={route.path}>
+                            <Layout>{route.component}</Layout>
+                        </Route>
+                    ))}
+                </Switch>
+            </Router>
     )
 }
 
