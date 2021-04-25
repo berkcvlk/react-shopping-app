@@ -10,30 +10,40 @@ export const routes = [
         path: '/',
         exact: true,
         component: <Home />,
-        title: 'Home'
-    },
-    {
-        path: '/cart',
-        exact: false,
-        component: <Cart />,
-        title: 'Cart'
-    },
-    {
-        path: '/favourites',
-        exact: false,
-        component: <Favourites />,
-        title: 'Favourites'
+        isHeader: true,
+        title: 'Home',
+        class: "navbar__item"
     },
     {
         path: '/products',
         exact: true,
         component: <Products />,
-        title: 'Products'
+        isHeader: true,
+        title: 'Products',
+        class: "navbar__item"
+    },
+    {
+        path: '/favourites',
+        exact: false,
+        component: <Favourites />,
+        isHeader: true,
+        title: 'Favourites',
+        class: "navbar__item"
+    },
+    {
+        path: '/cart',
+        exact: false,
+        component: <Cart />,
+        isHeader: true,
+        title: 'Cart',
+        class: "navbar__item navbar__item--cart"
     },
     {
         path: '/products-detail/:id',
         exact: true,
         component: <ProductDetail />,
-        title: ''
+        isHeader: false,
+        title: 'Products',
+        class: "navbar__item"
     }
 ]

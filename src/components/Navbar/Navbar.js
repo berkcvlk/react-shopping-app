@@ -1,30 +1,29 @@
-import { Link } from 'react-router-dom';
-import { routes } from '../../config/Router';
+import { Link } from "react-router-dom";
+import { routes } from "../../config/Router";
 
-import './Navbar.scss';
+import "./Navbar.scss";
 
 function Navbar(props) {
-    return (
-        <nav className="navbar">
-            <span className="navbar__logo">MessLife</span>
-            <div className="navbar__items-container">
-                {
-                    /**
-                        <span className="navbar__item">Home</span>
-                        <span className="navbar__item">Products</span>
-                        <span className="navbar__item">Favourites</span>
-                        <span className="navbar__item navbar__item--cart">
-                        Card
-                        <span className="cart-count"></span>
-                        </span>
-                         <span className="navbar__item navbar__item--login">Login</span>
-                    
-                    */
-                }
-
-            </div>
-        </nav>
-    )
+  return (
+    <nav className="navbar">
+      <span className="navbar__logo">MessLife</span>
+      <div className="navbar__items-container">
+        {routes.map((route) => {
+          if (route.isHeader) {
+            return (
+              <span
+                key={route.title}
+                className={route.class ? route.class : ""}
+              >
+                <Link to={route.path}>{route.title}</Link>
+              </span>
+            );
+          } else return null;
+        })}
+        <span className="navbar__item navbar__item--login">Login</span>
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar;
