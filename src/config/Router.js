@@ -12,7 +12,7 @@ export const routes = [
         component: <Home />,
         isHeader: true,
         title: 'Home',
-        class: "navbar__item"
+        className: "navbar__item"
     },
     {
         path: '/products',
@@ -20,7 +20,7 @@ export const routes = [
         component: <Products />,
         isHeader: true,
         title: 'Products',
-        class: "navbar__item"
+        className: "navbar__item"
     },
     {
         path: '/favourites',
@@ -28,7 +28,7 @@ export const routes = [
         component: <Favourites />,
         isHeader: true,
         title: 'Favourites',
-        class: "navbar__item"
+        className: "navbar__item"
     },
     {
         path: '/cart',
@@ -36,7 +36,7 @@ export const routes = [
         component: <Cart />,
         isHeader: true,
         title: 'Cart',
-        class: "navbar__item navbar__item--cart"
+        className: "navbar__item navbar__item--cart"
     },
     {
         path: '/products-detail/:id',
@@ -44,6 +44,6 @@ export const routes = [
         component: <ProductDetail />,
         isHeader: false,
         title: 'Products',
-        class: "navbar__item"
+        className: "navbar__item"
     }
 ]
