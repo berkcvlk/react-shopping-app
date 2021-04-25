@@ -1,0 +1,14 @@
+[
+    {
+        "image" : "",
+        "name" : "",
+        "price" : 0,
+        "isAdded" : false,
+        "isFavourite" : false,
+        "isPopular" : false,
+        "rate" : 4,
+        "seller" : "",
+        "category" : ""
+    }
+    
+]

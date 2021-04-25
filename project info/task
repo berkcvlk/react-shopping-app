@@ -1,0 +1,55 @@
+1)Navbar, ProductCard ve diğer componentlar için ikonlar eklenecek
+
+2)Google font eklenecek
+
+3)ProductCard component'ı için fotoğraf bulunacak
+
+4)Bulunan fotoğraflar'ın minify edilmesi gerekiyor
+
+5)ProductCard component'ının içinin doldurulması için bir JSON dosyası oluşturulup veriler burdan alınacak
+
+6)Veri alma işlemi axios, fetch veya XMLHttpRequest kullanınabilir
+
+7)App component'i React Router ile sarmalanmalı
+
+8)Uygun bir yerde(büyük ihtimalle App) Contex API kullanılarak JSON dosyasındaki veriler alınmalı
+
+9)Daha sonra ilgili yerlerde Contex.Provider ve Contex.Consumer ile veri paylaşımı yapılmalı
+
+10)Her Product'ın benzersiz bir id'si olmalı bunu random metodu kullanarak yapabiliriz. 
+Best Practice olması için id'ler oluşurken diğer id'leri kontrol ederiz. 
+
+11)Login kısmında kullanıcının bilgilerini localStorage'a kaydetmeliyiz.
+Kullanıcı bilgisi olarak email, parola ve favori olarak işaretlenmiş product idleri olacak
+
+12)Navbar kısmındaki favourites kısmı sadece login olduğumuzda görünecek diğer türlü kaybolacak
+
+13)Eğer bir kişi login olmadan ProductCard component'ı üzerindeki favoriye ekleme butonuna basarsa login ekranına gönderilecek 
+veya bir pop-up olarak çıkabilir
+
+14)ProductCard component'ı için oluşturulacak JSON dosyasında image(URL), name, price, isAdded(sepete ekleme), isFavourite, isPopular, rating, seller, category 
+alanları olmalı
+
+15)ProductCard component'ı üzerindeki sepete ekleme butonuna basıldığında navbar kısmında yer alan Card'ın yanında 1 - 2 - 3 gibi 
+bir sayı ile kaç adet ürününün sepete eklendiği yazacak
+
+16)Card kısmına tıkladığında sepetim sayfasına gideceğiz orada sepete eklenmiş ürünler olacak. Bunun için ProductCard
+component'larının isAded özelliğine bakmamız lazım. 
+
+17)Sepete eklenmiş ürünlerin yanındaki + ve - butonlarına bastığımızda ürün sayısı aratacak ve azalacak
+aynı zamanda sağ taraftaki vergi kısmı vs dinamik olarak hesaplanacak. Clear butonu sepetteki her şeyi silecek
+
+18)Eğer bir kullanıcı login olduğunda sepetine eklediği ürünler de localStorage'da saklanmalı
+diyelim ki login olunca X Y Z ürünlerini sepete eklemiş ve sonra logout olmuş daha sonra logout haldeyken
+sepete A B C ürünlerini eklemiş bu durumda kullanıcının sepetinde X Y Z A B C ürünleri bulunmalı
+kullanıcı logout halindeyken sepete eklenen tüm ürünleri GUEST adlı bir localStorage alanına ekleriz daha sonra 
+kullanıcı login olunca bu verileri çekeriz
+
+19)Favourites sayfasında isFavourites özelliği true olan ürünler listelenmeli ayrıca eğer bu özellik true ise 
+beğenme ikonunun içini dolduracak bir class eklenmeli
+
+20)Ödeme sayfasında kredi kartı, adres gibi bilgilerin alındığı bir form oluşturup bunu validate edebiliriz
+
+
+
+
