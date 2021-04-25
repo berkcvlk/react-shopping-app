@@ -1,9 +1,18 @@
 import ProductCard from '../ProductCard/ProductCard';
-import './ProductsContainer';
+import './ProductsContainer.scss';
 
 function Products(props) {
-    return(
-        <ProductCard />
+    return (
+        <section className="products-container" >
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+        </section>
     )
 }
 

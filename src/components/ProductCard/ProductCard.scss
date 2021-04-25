@@ -1,0 +1,27 @@
+/* PRODUCT CARD */
+
+.product {
+    $product : &;
+
+    border: 1px solid;
+    width: 250px;
+    height: 350px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+
+    &__image {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+    }
+
+
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+    }
+
+
+}

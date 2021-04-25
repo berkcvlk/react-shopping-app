@@ -7,10 +7,14 @@ import {
 } from "react-router-dom";
 
 import Navbar from './components/Navbar/Navbar';
+import ProductsContainer from './components/ProductsContainer/ProductsContainer';
 
 function App(props) {
     return (
+        <>
         <Navbar />
+        <ProductsContainer />
+        </>
     )
 }
 
