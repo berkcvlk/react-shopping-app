@@ -29,7 +29,7 @@
     "name": "Playstation 5",
     "price": 1349.99,
     "isAdded": false,
-    "isFavourite": false,
+    "isFavourite": true,
     "isPopular": true,
     "rate": 3,
     "seller": "mesut",

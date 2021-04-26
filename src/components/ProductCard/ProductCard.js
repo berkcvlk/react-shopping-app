@@ -13,10 +13,10 @@ function ProductCard(props) {
       />
       <div className="product__info">
         <span className="product__item product__item--text product__item--name">
-          Test
+          {props.data.name}
         </span>
         <span className="product__item product__item--text product__item--price">
-          1$
+          {props.data.price + "$"}
         </span>
         <span className="product__item product__item--icon product__item--like">
           <Heart />
