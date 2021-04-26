@@ -20,7 +20,12 @@ function Navbar(props) {
             );
           } else return null;
         })}
-        <span className="navbar__item navbar__item--login">Login</span>
+        <span
+          onClick={props.onToggle}
+          className="navbar__item navbar__item--login"
+        >
+          Login
+        </span>
       </div>
     </nav>
   );
